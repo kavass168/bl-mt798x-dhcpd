@@ -21,7 +21,7 @@
 		blink_led = "red:system";
 		system_led = "green:system";
     	environment {
-			bootargs = "root=/dev/mmcblk0p65 rootwait";
+			bootargs = "root=/dev/fit0 rootwait";
 			bootconf = "config-1#mt7981-philips-hy3000";
 		};
 	};
