@@ -58,7 +58,7 @@ jobs:
               | awk -F '/' '/defconfig$/ {print $NF}' \
               | sort -u
           )"
-          CONFIG_LIST="mt7981_philips_hy3000_defconfig"
+          CONFIG_LIST=mt7981_philips_hy3000_defconfig
           echo "$CONFIG_LIST"
           if [ -z "$CONFIG_LIST" ]; then
             echo "No *defconfig entries found in patch: $PATCH_FILE" >&2
