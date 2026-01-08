@@ -58,7 +58,7 @@ jobs:
               | awk -F '/' '/defconfig$/ {print $NF}' \
               | sort -u
           )"
-
+          echo "$CONFIG_LIST"
           if [ -z "$CONFIG_LIST" ]; then
             echo "No *defconfig entries found in patch: $PATCH_FILE" >&2
             exit 1
